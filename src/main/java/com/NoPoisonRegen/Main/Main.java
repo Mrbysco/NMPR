@@ -1,8 +1,8 @@
 package com.nopoisonregen.main;
 
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effects;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.TickEvent.PlayerTickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -18,22 +18,22 @@ public class Main {
 
    @SubscribeEvent
    public void playerTickEvent(PlayerTickEvent event) {
-      PlayerEntity player = event.player;
-      if (player.hasEffect(Effects.REGENERATION) && player.hasEffect(Effects.POISON)) {
-         int regenTime = player.getEffect(Effects.REGENERATION).getDuration();
-         int poisonTime = player.getEffect(Effects.POISON).getDuration();
+      Player player = event.player;
+      if (player.hasEffect(MobEffects.REGENERATION) && player.hasEffect(MobEffects.POISON)) {
+         int regenTime = player.getEffect(MobEffects.REGENERATION).getDuration();
+         int poisonTime = player.getEffect(MobEffects.POISON).getDuration();
          int remainingTime = regenTime - poisonTime;
          if (remainingTime < 0) {
-            player.removeEffectNoUpdate(Effects.POISON);
-            player.removeEffectNoUpdate(Effects.REGENERATION);
-            player.addEffect(new EffectInstance(Effects.POISON, -remainingTime));
+            player.removeEffectNoUpdate(MobEffects.POISON);
+            player.removeEffectNoUpdate(MobEffects.REGENERATION);
+            player.addEffect(new MobEffectInstance(MobEffects.POISON, -remainingTime));
          } else if (remainingTime > 0) {
-            player.removeEffectNoUpdate(Effects.POISON);
-            player.removeEffectNoUpdate(Effects.REGENERATION);
-            player.addEffect(new EffectInstance(Effects.REGENERATION, remainingTime));
+            player.removeEffectNoUpdate(MobEffects.POISON);
+            player.removeEffectNoUpdate(MobEffects.REGENERATION);
+            player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, remainingTime));
          } else {
-            player.removeEffectNoUpdate(Effects.POISON);
-            player.removeEffectNoUpdate(Effects.REGENERATION);
+            player.removeEffectNoUpdate(MobEffects.POISON);
+            player.removeEffectNoUpdate(MobEffects.REGENERATION);
          }
       }
    }
