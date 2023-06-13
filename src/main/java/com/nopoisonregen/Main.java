@@ -40,7 +40,7 @@ public class Main {
 		MobEffectInstance effectInstance = event.getEffectInstance();
 		MobEffect applicableEffect = effectInstance.getEffect();
 		LivingEntity livingEntity = event.getEntity();
-		Level level = livingEntity.level;
+		Level level = livingEntity.level();
 		if (!level.isClientSide && !cancelableEffectMap.isEmpty()) {
 			for (Map.Entry<MobEffect, MobEffect> entry : cancelableEffectMap.entrySet()) {
 				MobEffect effect1 = entry.getKey();
@@ -77,7 +77,7 @@ public class Main {
 	@SubscribeEvent
 	public void onLivingTick(LivingEvent.LivingTickEvent event) {
 		LivingEntity livingEntity = event.getEntity();
-		Level level = livingEntity.level;
+		Level level = livingEntity.level();
 		if (!level.isClientSide && level.getGameTime() % 20 == 0 && !cancelableEffectMap.isEmpty()) {
 			for (Map.Entry<MobEffect, MobEffect> entry : cancelableEffectMap.entrySet()) {
 				MobEffect effect1 = entry.getKey();
