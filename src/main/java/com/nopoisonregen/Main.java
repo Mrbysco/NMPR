@@ -12,7 +12,6 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModLoadingContext;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
-import net.neoforged.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.entity.living.LivingEvent;
 import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
@@ -27,8 +26,7 @@ public class Main {
 	public static final Logger LOGGER = LogManager.getLogger();
 	public static final String MOD_ID = "nopoisonregen";
 
-	public Main() {
-		IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+	public Main(IEventBus eventBus) {
 		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.commonSpec);
 		eventBus.register(Config.class);
 
