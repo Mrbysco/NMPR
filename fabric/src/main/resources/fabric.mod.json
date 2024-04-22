@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "nopoisonregen",
+  "version": "${version}",
+  "name": "No Poison with Regeneration",
+  "description": "This mod makes it so that the potion effects poison and regenration cancel each other out.",
+  "authors": [
+    "kara2810x"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/nmpr",
+    "sources": "https://github.com/Mrbysco/NMPR",
+    "issues": "https://github.com/Mrbysco/NMPR/issues"
+  },
+  "license": "GNU LGPL V3.0",
+  "icon": "assets/modid/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.nopoisonregen.NMPRFabric"
+    ],
+    "modmenu": [
+      "com.nopoisonregen.NMPRModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "nopoisonregen.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14",
+    "fabric": "*",
+    "minecraft": "~1.20",
+    "java": ">=17",
+    "cloth-config": ">=11"
+  }
+}
+  

@@ -1,0 +1,210 @@
+[31Dec2023 01:23:20.518] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, 20.4.69-beta, --assetIndex, asset-index, --assetsDir, C:\Users\Mrbysco\.gradle\caches\minecraft\assets\1.20.4, --gameDir, ., --fml.neoForgeVersion, 20.4.69-beta, --fml.fmlVersion, 2.0.7, --fml.mcVersion, 1.20.4, --fml.neoFormVersion, 20231207.154220]
+[31Dec2023 01:23:20.521] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.6 by Amazon.com Inc.; OS Windows 10 arch amd64 version 10.0
+[31Dec2023 01:23:20.576] [main/DEBUG] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Found launch services [minecraft,forgeclient,forgedatauserdev,testharness,forgeserverdev,forgeserveruserdev,forgeclientdev,forgeclientuserdev,forgeserver,forgedatadev]
+[31Dec2023 01:23:20.592] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Found naming services : [srgtomcp]
+[31Dec2023 01:23:20.608] [main/DEBUG] [cpw.mods.modlauncher.LaunchPluginHandler/MODLAUNCHER]: Found launch plugins: [mixin,slf4jfixer,runtime_enum_extender,accesstransformer,runtimedistcleaner]
+[31Dec2023 01:23:20.635] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Discovering transformation services
+[31Dec2023 01:23:20.641] [main/DEBUG] [net.neoforged.fml.loading.FMLPaths/CORE]: Path GAMEDIR is D:\Development\NMPR---1.12\runs\client
+[31Dec2023 01:23:20.641] [main/DEBUG] [net.neoforged.fml.loading.FMLPaths/CORE]: Path MODSDIR is D:\Development\NMPR---1.12\runs\client\mods
+[31Dec2023 01:23:20.642] [main/DEBUG] [net.neoforged.fml.loading.FMLPaths/CORE]: Path CONFIGDIR is D:\Development\NMPR---1.12\runs\client\config
+[31Dec2023 01:23:20.642] [main/DEBUG] [net.neoforged.fml.loading.FMLPaths/CORE]: Path FMLCONFIG is D:\Development\NMPR---1.12\runs\client\config\fml.toml
+[31Dec2023 01:23:20.669] [main/WARN] [net.neoforged.fml.loading.FMLConfig/CORE]: Configuration file D:\Development\NMPR---1.12\runs\client\config\fml.toml is not correct. Correcting
+[31Dec2023 01:23:20.671] [main/INFO] [net.neoforged.fml.loading.FMLConfig/CORE]: Incorrect key [disableConfigWatcher] was corrected from null to false
+[31Dec2023 01:23:20.671] [main/INFO] [net.neoforged.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSkipGLVersions] was corrected from null to []
+[31Dec2023 01:23:20.671] [main/INFO] [net.neoforged.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSquir] was corrected from null to false
+[31Dec2023 01:23:20.676] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: Loaded FML config from D:\Development\NMPR---1.12\runs\client\config\fml.toml
+[31Dec2023 01:23:20.676] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig disableConfigWatcher is false
+[31Dec2023 01:23:20.676] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowControl is true
+[31Dec2023 01:23:20.676] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig maxThreads is 24
+[31Dec2023 01:23:20.677] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig versionCheck is true
+[31Dec2023 01:23:20.677] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig defaultConfigPath is defaultconfigs
+[31Dec2023 01:23:20.677] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig disableOptimizedDFU is true
+[31Dec2023 01:23:20.677] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowProvider is fmlearlywindow
+[31Dec2023 01:23:20.677] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowWidth is 854
+[31Dec2023 01:23:20.677] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowHeight is 480
+[31Dec2023 01:23:20.677] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowFBScale is 1
+[31Dec2023 01:23:20.677] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowMaximized is false
+[31Dec2023 01:23:20.677] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowSkipGLVersions is []
+[31Dec2023 01:23:20.677] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowSquir is false
+[31Dec2023 01:23:20.684] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found additional transformation services from discovery services: 
+[31Dec2023 01:23:20.689] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[31Dec2023 01:23:20.792] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[31Dec2023 01:23:20.899] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[31Dec2023 01:23:20.940] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found transformer services : [mixin,fml]
+[31Dec2023 01:23:20.940] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading
+[31Dec2023 01:23:20.940] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service mixin
+[31Dec2023 01:23:20.941] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service mixin
+[31Dec2023 01:23:20.941] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service fml
+[31Dec2023 01:23:20.942] [main/DEBUG] [net.neoforged.fml.loading.LauncherVersion/CORE]: Found FMLLauncher version 2.0
+[31Dec2023 01:23:20.942] [main/DEBUG] [net.neoforged.fml.loading.FMLLoader/CORE]: FML 2.0 loading
+[31Dec2023 01:23:20.942] [main/DEBUG] [net.neoforged.fml.loading.FMLLoader/CORE]: FML found ModLauncher version : 10.0.9+10.0.9+main.dcd20f30
+[31Dec2023 01:23:20.942] [main/DEBUG] [net.neoforged.fml.loading.FMLLoader/CORE]: FML found AccessTransformer version : 10.0.1+139da711
+[31Dec2023 01:23:20.943] [main/DEBUG] [net.neoforged.fml.loading.FMLLoader/CORE]: FML found EventBus version : null
+[31Dec2023 01:23:20.943] [main/DEBUG] [net.neoforged.fml.loading.FMLLoader/CORE]: Found Runtime Dist Cleaner
+[31Dec2023 01:23:20.944] [main/DEBUG] [net.neoforged.fml.loading.FMLLoader/CORE]: FML found CoreMod version : 6.0.4+main.1ed25481
+[31Dec2023 01:23:20.944] [main/DEBUG] [net.neoforged.fml.loading.FMLLoader/CORE]: Found ForgeSPI package implementation version 2.0
+[31Dec2023 01:23:20.945] [main/DEBUG] [net.neoforged.fml.loading.FMLLoader/CORE]: Found ForgeSPI package specification 2
+[31Dec2023 01:23:20.945] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service fml
+[31Dec2023 01:23:20.945] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Configuring option handling for services
+[31Dec2023 01:23:20.949] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services initializing
+[31Dec2023 01:23:20.950] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service mixin
+[31Dec2023 01:23:20.965] [main/DEBUG] [mixin/]: MixinService [ModLauncher] was successfully booted in cpw.mods.cl.ModuleClassLoader@3d74bf60
+[31Dec2023 01:23:20.978] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Mrbysco/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23182!/ Service=ModLauncher Env=CLIENT
+[31Dec2023 01:23:20.980] [main/DEBUG] [mixin/]: Initialising Mixin Platform Manager
+[31Dec2023 01:23:20.981] [main/DEBUG] [mixin/]: Adding mixin platform agents for container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[31Dec2023 01:23:20.981] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[31Dec2023 01:23:20.981] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[31Dec2023 01:23:20.982] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[31Dec2023 01:23:20.982] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[31Dec2023 01:23:20.984] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service mixin
+[31Dec2023 01:23:20.984] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service fml
+[31Dec2023 01:23:20.984] [main/DEBUG] [net.neoforged.fml.loading.FMLServiceProvider/CORE]: Setting up basic FML game directories
+[31Dec2023 01:23:20.984] [main/DEBUG] [net.neoforged.fml.loading.FMLPaths/CORE]: Path GAMEDIR is D:\Development\NMPR---1.12\runs\client
+[31Dec2023 01:23:20.985] [main/DEBUG] [net.neoforged.fml.loading.FMLPaths/CORE]: Path MODSDIR is D:\Development\NMPR---1.12\runs\client\mods
+[31Dec2023 01:23:20.985] [main/DEBUG] [net.neoforged.fml.loading.FMLPaths/CORE]: Path CONFIGDIR is D:\Development\NMPR---1.12\runs\client\config
+[31Dec2023 01:23:20.985] [main/DEBUG] [net.neoforged.fml.loading.FMLPaths/CORE]: Path FMLCONFIG is D:\Development\NMPR---1.12\runs\client\config\fml.toml
+[31Dec2023 01:23:20.985] [main/DEBUG] [net.neoforged.fml.loading.FMLServiceProvider/CORE]: Loading configuration
+[31Dec2023 01:23:20.986] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: Loaded FML config from D:\Development\NMPR---1.12\runs\client\config\fml.toml
+[31Dec2023 01:23:20.987] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig disableConfigWatcher is false
+[31Dec2023 01:23:20.987] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowControl is true
+[31Dec2023 01:23:20.987] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig maxThreads is 24
+[31Dec2023 01:23:20.987] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig versionCheck is true
+[31Dec2023 01:23:20.987] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig defaultConfigPath is defaultconfigs
+[31Dec2023 01:23:20.987] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig disableOptimizedDFU is true
+[31Dec2023 01:23:20.987] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowProvider is fmlearlywindow
+[31Dec2023 01:23:20.987] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowWidth is 854
+[31Dec2023 01:23:20.987] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowHeight is 480
+[31Dec2023 01:23:20.987] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowFBScale is 1
+[31Dec2023 01:23:20.987] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowMaximized is false
+[31Dec2023 01:23:20.988] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowSkipGLVersions is []
+[31Dec2023 01:23:20.988] [main/TRACE] [net.neoforged.fml.loading.FMLConfig/CORE]: FMLConfig earlyWindowSquir is false
+[31Dec2023 01:23:20.988] [main/DEBUG] [net.neoforged.fml.loading.FMLServiceProvider/CORE]: Preparing ModFile
+[31Dec2023 01:23:20.990] [main/DEBUG] [net.neoforged.fml.loading.FMLServiceProvider/CORE]: Preparing launch handler
+[31Dec2023 01:23:20.990] [main/DEBUG] [net.neoforged.fml.loading.FMLLoader/CORE]: Using forgeclientuserdev as launch service
+[31Dec2023 01:23:20.997] [main/DEBUG] [net.neoforged.fml.loading.FMLLoader/CORE]: Received command line version data  : VersionInfo[neoForgeVersion=20.4.69-beta, fmlVersion=2.0.7, mcVersion=1.20.4, neoFormVersion=20231207.154220]
+[31Dec2023 01:23:20.997] [main/DEBUG] [net.neoforged.fml.common.asm.RuntimeDistCleaner/DISTXFORM]: Configuring for Dist CLIENT
+[31Dec2023 01:23:20.998] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service fml
+[31Dec2023 01:23:20.998] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Current naming domain is 'mcp'
+[31Dec2023 01:23:21.000] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Identified name mapping providers {srg=srgtomcp:1234}
+[31Dec2023 01:23:21.000] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services begin scanning
+[31Dec2023 01:23:21.000] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service mixin
+[31Dec2023 01:23:21.000] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service mixin
+[31Dec2023 01:23:21.000] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service fml
+[31Dec2023 01:23:21.000] [main/DEBUG] [net.neoforged.fml.loading.FMLServiceProvider/CORE]: Initiating mod scan
+[31Dec2023 01:23:21.001] [main/DEBUG] [net.neoforged.fml.loading.FMLLoader/SCAN]: Scanning for Mod Locators
+[31Dec2023 01:23:21.009] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModListHandler/CORE]: Found mod coordinates from lists: []
+[31Dec2023 01:23:21.011] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Mod Locators : (mods folder:2.0),(maven libs:2.0),(exploded directory:2.0),(minecraft:2.0),(userdev classpath:2.0),(builtin game layer libraries:2.0)
+[31Dec2023 01:23:21.011] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Dependency Locators : (JarInJar:2.0)
+[31Dec2023 01:23:21.012] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Scanning for mods and other resources to load. We know 6 ways to find mods
+[31Dec2023 01:23:21.012] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Trying locator {mods folder locator at D:\Development\NMPR---1.12\runs\client\mods}
+[31Dec2023 01:23:21.012] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModsFolderLocator/SCAN]: Scanning mods dir D:\Development\NMPR---1.12\runs\client\mods for mods
+[31Dec2023 01:23:21.014] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Locator {mods folder locator at D:\Development\NMPR---1.12\runs\client\mods} found 0 candidates or errors
+[31Dec2023 01:23:21.016] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Locator {mods folder locator at D:\Development\NMPR---1.12\runs\client\mods} found 0 valid mod files
+[31Dec2023 01:23:21.016] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Trying locator {Maven Directory locator for mods []}
+[31Dec2023 01:23:21.017] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Locator {Maven Directory locator for mods []} found 0 candidates or errors
+[31Dec2023 01:23:21.017] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Locator {Maven Directory locator for mods []} found 0 valid mod files
+[31Dec2023 01:23:21.017] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Trying locator {ExplodedDir locator}
+[31Dec2023 01:23:21.017] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Locator {ExplodedDir locator} found 0 candidates or errors
+[31Dec2023 01:23:21.018] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Locator {ExplodedDir locator} found 0 valid mod files
+[31Dec2023 01:23:21.018] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Trying locator net.neoforged.fml.loading.moddiscovery.MinecraftLocator@18ca3c62
+[31Dec2023 01:23:21.019] [main/DEBUG] [net.neoforged.fml.loading.targets.CommonLaunchHandler/CORE]: Got mod coordinates NMPR---1.12%%D:\Development\NMPR---1.12\build\resources\main;NMPR---1.12%%D:\Development\NMPR---1.12\build\classes\java\main from env
+[31Dec2023 01:23:21.021] [main/DEBUG] [net.neoforged.fml.loading.targets.CommonLaunchHandler/CORE]: Found supplied mod coordinates [{NMPR---1.12=[D:\Development\NMPR---1.12\build\resources\main, D:\Development\NMPR---1.12\build\classes\java\main]}]
+[31Dec2023 01:23:21.023] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 3080/PCIe/SSE2 GL version 4.6.0 NVIDIA 536.67, NVIDIA Corporation
+[31Dec2023 01:23:21.152] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file neoforge-20.4.69-beta.jar with {minecraft} mods - versions {1.20.4}
+[31Dec2023 01:23:21.155] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Mrbysco\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\language-java\2.0.7\b01ef89554cc4de7b0061fe4bbb461743fa06084\language-java-2.0.7.jar
+[31Dec2023 01:23:21.156] [main/WARN] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Mrbysco\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\language-java\2.0.7\b01ef89554cc4de7b0061fe4bbb461743fa06084\language-java-2.0.7.jar is missing mods.toml file
+[31Dec2023 01:23:21.158] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Mrbysco\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\core\2.0.7\378a7fefa1de771f5e03ff85f0f3e90e25e6351d\core-2.0.7.jar
+[31Dec2023 01:23:21.159] [main/WARN] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Mrbysco\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\core\2.0.7\378a7fefa1de771f5e03ff85f0f3e90e25e6351d\core-2.0.7.jar is missing mods.toml file
+[31Dec2023 01:23:21.162] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Mrbysco\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\language-minecraft\2.0.7\647712e03519c97818853317194c204c2f2055c4\language-minecraft-2.0.7.jar
+[31Dec2023 01:23:21.162] [main/WARN] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Mrbysco\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\language-minecraft\2.0.7\647712e03519c97818853317194c204c2f2055c4\language-minecraft-2.0.7.jar is missing mods.toml file
+[31Dec2023 01:23:21.165] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Mrbysco\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\language-lowcode\2.0.7\4970d9adbc5ec222d10f9f5d312bf6d41d07ca0f\language-lowcode-2.0.7.jar
+[31Dec2023 01:23:21.165] [main/WARN] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Mrbysco\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\language-lowcode\2.0.7\4970d9adbc5ec222d10f9f5d312bf6d41d07ca0f\language-lowcode-2.0.7.jar is missing mods.toml file
+[31Dec2023 01:23:21.167] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.AbstractModProvider/SCAN]: Found META-INF/mods.toml mod of type null: [D:\Development\NMPR---1.12\build\resources\main, D:\Development\NMPR---1.12\build\classes\java\main]
+[31Dec2023 01:23:21.168] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate D:\Development\NMPR---1.12\build\resources\main
+[31Dec2023 01:23:21.174] [main/ERROR] [net.neoforged.fml.loading.moddiscovery.ModInfo/]: Mod 'nopoisonregen' uses deprecated 'mandatory' field in the dependency declaration for 'minecraft'. Use the 'type' field and 'required'/'optional' instead
+[31Dec2023 01:23:21.174] [main/ERROR] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Locator net.neoforged.fml.loading.moddiscovery.MinecraftLocator@18ca3c62 found an invalid mod file net.neoforged.fml.loading.moddiscovery.ModFileInfo@7e31ce0f
+net.neoforged.fml.loading.moddiscovery.InvalidModFileException: Deprecated 'mandatory' field is used in dependency (main)
+	at net.neoforged.fml.loading.moddiscovery.ModInfo$ModVersion.lambda$new$2(ModInfo.java:228) ~[loader-2.0.7.jar:2.0]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at net.neoforged.fml.loading.moddiscovery.ModInfo$ModVersion.<init>(ModInfo.java:221) ~[loader-2.0.7.jar:2.0]
+	at net.neoforged.fml.loading.moddiscovery.ModInfo.lambda$new$8(ModInfo.java:102) ~[loader-2.0.7.jar:2.0]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?]
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?]
+	at net.neoforged.fml.loading.moddiscovery.ModInfo.<init>(ModInfo.java:103) ~[loader-2.0.7.jar:2.0]
+	at net.neoforged.fml.loading.moddiscovery.ModFileInfo.lambda$new$2(ModFileInfo.java:88) ~[loader-2.0.7.jar:2.0]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?]
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?]
+	at net.neoforged.fml.loading.moddiscovery.ModFileInfo.<init>(ModFileInfo.java:89) ~[loader-2.0.7.jar:2.0]
+	at net.neoforged.fml.loading.moddiscovery.ModFileParser.modsTomlParser(ModFileParser.java:47) ~[loader-2.0.7.jar:2.0]
+	at net.neoforged.fml.loading.moddiscovery.ModFileParser.readModList(ModFileParser.java:31) ~[loader-2.0.7.jar:2.0]
+	at net.neoforged.fml.loading.moddiscovery.ModFile.<init>(ModFile.java:72) ~[loader-2.0.7.jar:2.0]
+	at net.neoforged.fml.loading.moddiscovery.ModFile.<init>(ModFile.java:61) ~[loader-2.0.7.jar:2.0]
+	at net.neoforged.fml.loading.moddiscovery.AbstractModProvider.createMod(AbstractModProvider.java:48) ~[loader-2.0.7.jar:2.0]
+	at net.neoforged.fml.loading.moddiscovery.MinecraftLocator.lambda$scanMods$4(MinecraftLocator.java:51) ~[loader-2.0.7.jar:2.0]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?]
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?]
+	at net.neoforged.fml.loading.moddiscovery.MinecraftLocator.scanMods(MinecraftLocator.java:55) ~[loader-2.0.7.jar:2.0]
+	at net.neoforged.fml.loading.moddiscovery.ModDiscoverer.discoverMods(ModDiscoverer.java:75) ~[loader-2.0.7.jar:2.0]
+	at net.neoforged.fml.loading.FMLLoader.beginModScan(FMLLoader.java:155) ~[loader-2.0.7.jar:2.0]
+	at net.neoforged.fml.loading.FMLServiceProvider.beginScanning(FMLServiceProvider.java:88) ~[loader-2.0.7.jar:2.0]
+	at cpw.mods.modlauncher.TransformationServiceDecorator.runScan(TransformationServiceDecorator.java:112) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.TransformationServicesHandler.lambda$runScanningTransformationServices$8(TransformationServicesHandler.java:100) ~[modlauncher-10.0.9.jar:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.HashMap$ValueSpliterator.forEachRemaining(HashMap.java:1779) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?]
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?]
+	at cpw.mods.modlauncher.TransformationServicesHandler.runScanningTransformationServices(TransformationServicesHandler.java:102) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.TransformationServicesHandler.initializeTransformationServices(TransformationServicesHandler.java:55) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:88) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+[31Dec2023 01:23:21.194] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Trying locator net.neoforged.fml.loading.moddiscovery.ClasspathLocator@65f00478
+[31Dec2023 01:23:21.218] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Locator net.neoforged.fml.loading.moddiscovery.ClasspathLocator@65f00478 found 3 candidates or errors
+[31Dec2023 01:23:21.218] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Locator net.neoforged.fml.loading.moddiscovery.ClasspathLocator@65f00478 found 3 invalid mod files
+[31Dec2023 01:23:21.219] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Locator net.neoforged.fml.loading.moddiscovery.ClasspathLocator@65f00478 found 0 valid mod files
+[31Dec2023 01:23:21.219] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Trying locator net.neoforged.fml.loading.moddiscovery.BuiltinGameLibraryLocator@5300f14a
+[31Dec2023 01:23:21.223] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.AbstractModProvider/SCAN]: Found META-INF/MANIFEST.MF mod of type GAMELIBRARY: [C:\Users\Mrbysco\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\events\2.0.7\85e2805c6cd73b2dfcdf224d946e7f1211429d92\events-2.0.7.jar]
+[31Dec2023 01:23:21.226] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Locator net.neoforged.fml.loading.moddiscovery.BuiltinGameLibraryLocator@5300f14a found 1 candidates or errors
+[31Dec2023 01:23:21.226] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Locator net.neoforged.fml.loading.moddiscovery.BuiltinGameLibraryLocator@5300f14a found 1 valid mod files
+[31Dec2023 01:23:21.226] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "events-2.0.7.jar" of type GAMELIBRARY with provider net.neoforged.fml.loading.moddiscovery.BuiltinGameLibraryLocator@5300f14a
+[31Dec2023 01:23:21.234] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Successfully Loaded 1 mods. Attempting to load dependencies...
+[31Dec2023 01:23:21.234] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Trying locator net.neoforged.fml.loading.moddiscovery.JarInJarDependencyLocator@2fb5fe30
+[31Dec2023 01:23:21.238] [main/TRACE] [net.neoforged.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from events-2.0.7.jar, it does not contain dependency information.
+[31Dec2023 01:23:21.285] [main/INFO] [net.neoforged.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[31Dec2023 01:23:21.287] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Mrbysco\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\events\2.0.7\85e2805c6cd73b2dfcdf224d946e7f1211429d92\events-2.0.7.jar with languages []
+[31Dec2023 01:23:21.289] [main/DEBUG] [net.neoforged.fml.loading.moddiscovery.ModValidator/SCAN]: Found 1 mod files with 0 mods
+[31Dec2023 01:23:21.290] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service fml
+[31Dec2023 01:23:21.294] [main/DEBUG] [net.neoforged.fml.loading.LanguageLoadingProvider/CORE]: Found 0 language providers
+[31Dec2023 01:23:21.299] [main/DEBUG] [net.neoforged.fml.loading.ModSorter/]: Configured system mods: [minecraft]
