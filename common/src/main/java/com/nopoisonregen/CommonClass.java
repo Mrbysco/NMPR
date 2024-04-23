@@ -1,5 +1,6 @@
 package com.nopoisonregen;
 
+import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
@@ -12,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 public class CommonClass {
-	public static final Map<MobEffect, MobEffect> cancelableEffectMap = new HashMap<>();
+	public static final Map<Holder<MobEffect>, Holder<MobEffect>> cancelableEffectMap = new HashMap<>();
 
 	/**
 	 * Refresh cancelable effects cache
@@ -33,8 +34,8 @@ public class CommonClass {
 				String value2 = values[1];
 				ResourceLocation location2 = ResourceLocation.tryParse(value2);
 				if (location1 != null && location2 != null) {
-					MobEffect effect1 = BuiltInRegistries.MOB_EFFECT.get(location1);
-					MobEffect effect2 = BuiltInRegistries.MOB_EFFECT.get(location2);
+					Holder<MobEffect> effect1 = BuiltInRegistries.MOB_EFFECT.getHolder(location1).orElse(null);
+					Holder<MobEffect> effect2 = BuiltInRegistries.MOB_EFFECT.getHolder(location2).orElse(null);
 					if (effect1 != null && effect2 != null) {
 						cancelableEffectMap.put(effect1, effect2);
 					}
@@ -51,12 +52,12 @@ public class CommonClass {
 	 * @return True if the effect is applicable, false otherwise
 	 */
 	public static boolean isEffectApplicable(MobEffectInstance effectInstance, LivingEntity livingEntity) {
-		MobEffect applicableEffect = effectInstance.getEffect();
+		MobEffect applicableEffect = effectInstance.getEffect().value();
 		Level level = livingEntity.level();
 		if (!level.isClientSide && !cancelableEffectMap.isEmpty()) {
-			for (Map.Entry<MobEffect, MobEffect> entry : cancelableEffectMap.entrySet()) {
-				MobEffect effect1 = entry.getKey();
-				MobEffect effect2 = entry.getValue();
+			for (Map.Entry<Holder<MobEffect>, Holder<MobEffect>> entry : cancelableEffectMap.entrySet()) {
+				Holder<MobEffect> effect1 = entry.getKey();
+				Holder<MobEffect> effect2 = entry.getValue();
 				if (effect1 != null && effect2 != null) {
 					if (effect1 == applicableEffect && livingEntity.hasEffect(effect2)) {
 						MobEffectInstance instance2 = livingEntity.getEffect(effect2);
@@ -95,9 +96,9 @@ public class CommonClass {
 	public static void onLivingTick(LivingEntity livingEntity) {
 		Level level = livingEntity.level();
 		if (!level.isClientSide && level.getGameTime() % 20 == 0 && !cancelableEffectMap.isEmpty()) {
-			for (Map.Entry<MobEffect, MobEffect> entry : cancelableEffectMap.entrySet()) {
-				MobEffect effect1 = entry.getKey();
-				MobEffect effect2 = entry.getValue();
+			for (Map.Entry<Holder<MobEffect>, Holder<MobEffect>> entry : cancelableEffectMap.entrySet()) {
+				Holder<MobEffect> effect1 = entry.getKey();
+				Holder<MobEffect> effect2 = entry.getValue();
 				if (effect1 != null && effect2 != null && livingEntity.hasEffect(effect1) && livingEntity.hasEffect(effect2)) {
 					MobEffectInstance instance1 = livingEntity.getEffect(effect1);
 					MobEffectInstance instance2 = livingEntity.getEffect(effect2);
