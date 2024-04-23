@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[46,)"
+loaderVersion="[2,)"
 license="GNU LGPL V3.0"
 
 [[mods]]
@@ -13,7 +13,7 @@ This mod makes it so that the potion effects poison and regenration cancel each 
 '''
 [[dependencies.nopoisonregen]]
 modId="minecraft"
-mandatory=true
-versionRange="[1.20,1.21)"
+type="required"
+versionRange="[1.20.4,1.21)"
 ordering="NONE"
 side="BOTH"

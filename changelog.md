@@ -1,1 +1,1 @@
-* Initial multiloader build
+* Update multiloader setup to 1.20.4
