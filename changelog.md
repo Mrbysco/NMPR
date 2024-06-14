@@ -1,1 +1,1 @@
-* Update multiloader setup to 1.20.5
+* Update multiloader setup to 1.20.6
