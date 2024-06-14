@@ -50,6 +50,11 @@ dependencies {
     compileOnly project(":common")
 }
 
+tasks.named('test').configure {
+    //Disable builtin test task as we use and build uses testJunit so there is no point in having it also attempt to run an empty test task
+    enabled(false)
+}
+
 // NeoGradle compiles the game, but we don't want to add our common code to the game's code
 Spec<Task> notNeoTask = { Task it -> !it.name.startsWith("neo") } as Spec<Task>
 
