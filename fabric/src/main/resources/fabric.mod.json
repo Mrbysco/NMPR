@@ -13,7 +13,6 @@
     "issues": "https://github.com/Mrbysco/NMPR/issues"
   },
   "license": "GNU LGPL V3.0",
-  "icon": "assets/modid/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -27,11 +26,11 @@
     "nopoisonregen.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.15.11",
-    "minecraft": "~1.21",
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
     "java": ">=21",
     "fabric-api": "*",
-    "cloth-config": ">=15"
+    "cloth-config": ">=17"
   }
 }
   

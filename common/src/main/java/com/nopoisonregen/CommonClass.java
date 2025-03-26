@@ -34,8 +34,8 @@ public class CommonClass {
 				String value2 = values[1];
 				ResourceLocation location2 = ResourceLocation.tryParse(value2);
 				if (location1 != null && location2 != null) {
-					Holder<MobEffect> effect1 = BuiltInRegistries.MOB_EFFECT.getHolder(location1).orElse(null);
-					Holder<MobEffect> effect2 = BuiltInRegistries.MOB_EFFECT.getHolder(location2).orElse(null);
+					Holder<MobEffect> effect1 = BuiltInRegistries.MOB_EFFECT.get(location1).orElse(null);
+					Holder<MobEffect> effect2 = BuiltInRegistries.MOB_EFFECT.get(location2).orElse(null);
 					if (effect1 != null && effect2 != null) {
 						cancelableEffectMap.put(effect1, effect2);
 					}

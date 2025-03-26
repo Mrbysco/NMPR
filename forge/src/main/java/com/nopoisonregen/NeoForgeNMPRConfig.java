@@ -18,7 +18,7 @@ public class NeoForgeNMPRConfig {
 
 			cancelable = builder
 					.comment("A list of cancelable effects in the format \"effect1,effect2\"")
-					.defineList(List.of("cancelable"), () -> List.of("minecraft:regeneration,minecraft:poison"), o -> (o instanceof String));
+					.defineList("cancelable", () -> List.of("minecraft:regeneration,minecraft:poison"), String::new, o -> (o instanceof String));
 
 			builder.pop();
 		}
