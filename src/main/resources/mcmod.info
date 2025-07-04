@@ -1,16 +1,18 @@
 [
-{
-  "modid": "nopoisonregen",
-  "name": "No Poison with Regeneration",
-  "description": "This mod makes it so that the potion effects poison and regenration cancel each other out.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["kenny2810"],
-  "credits": "",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
-}
+  {
+    "modid": "nopoisonregen",
+    "name": "No Poison with Regeneration",
+    "description": "This mod makes it so that the potion effects poison and regenration cancel each other out.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "kara2810"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
 ]
