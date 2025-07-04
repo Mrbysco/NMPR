@@ -50,13 +50,12 @@ minecraft {
 }
 
 tasks.named('processResources', ProcessResources).configure {
-    var replaceProperties = [
-            mcversion: mc_version, version: version
-    ]
-    inputs.properties replaceProperties
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
 
-    filesMatching(['mcmod.info']) {
-        expand replaceProperties + [project: project]
+    from(sourceSets.main.resources.srcDirs) {
+        duplicatesStrategy = DuplicatesStrategy.INCLUDE
+        include 'mcmod.info'
+        expand version: project.version, 'mcversion': project.mc_version
     }
 }
 
