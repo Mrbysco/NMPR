@@ -6,6 +6,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
+import net.neoforged.neoforge.client.gui.ConfigurationScreen;
+import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
@@ -19,6 +21,10 @@ public class NMPRNeoForge {
 
 		NeoForge.EVENT_BUS.addListener(this::isEffectApplicable);
 		NeoForge.EVENT_BUS.addListener(this::onLivingTick);
+
+		if (dist.isClient()) {
+			container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
+		}
 	}
 
 	private void isEffectApplicable(MobEffectEvent.Applicable event) {

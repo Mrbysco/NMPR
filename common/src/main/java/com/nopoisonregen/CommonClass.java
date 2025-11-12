@@ -54,7 +54,7 @@ public class CommonClass {
 	public static boolean isEffectApplicable(MobEffectInstance effectInstance, LivingEntity livingEntity) {
 		MobEffect applicableEffect = effectInstance.getEffect().value();
 		Level level = livingEntity.level();
-		if (!level.isClientSide && !cancelableEffectMap.isEmpty()) {
+		if (!level.isClientSide() && !cancelableEffectMap.isEmpty()) {
 			for (Map.Entry<Holder<MobEffect>, Holder<MobEffect>> entry : cancelableEffectMap.entrySet()) {
 				Holder<MobEffect> effect1 = entry.getKey();
 				Holder<MobEffect> effect2 = entry.getValue();
@@ -95,7 +95,7 @@ public class CommonClass {
 	 */
 	public static void onLivingTick(LivingEntity livingEntity) {
 		Level level = livingEntity.level();
-		if (!level.isClientSide && level.getGameTime() % 20 == 0 && !cancelableEffectMap.isEmpty()) {
+		if (!level.isClientSide() && level.getGameTime() % 20 == 0 && !cancelableEffectMap.isEmpty()) {
 			for (Map.Entry<Holder<MobEffect>, Holder<MobEffect>> entry : cancelableEffectMap.entrySet()) {
 				Holder<MobEffect> effect1 = entry.getKey();
 				Holder<MobEffect> effect2 = entry.getValue();
