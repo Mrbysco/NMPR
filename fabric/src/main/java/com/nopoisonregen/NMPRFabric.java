@@ -1,29 +1,22 @@
 package com.nopoisonregen;
 
-import me.shedaniel.autoconfig.AutoConfig;
-import me.shedaniel.autoconfig.ConfigHolder;
-import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
+import com.nopoisonregen.config.NMPRConfig;
+import fuzs.forgeconfigapiport.fabric.api.v5.ConfigRegistry;
+import fuzs.forgeconfigapiport.fabric.api.v5.ModConfigEvents;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
-import net.minecraft.world.InteractionResult;
+import net.neoforged.fml.config.ModConfig;
 
 public class NMPRFabric implements ModInitializer {
-	public static ConfigHolder<FabricNMPRConfig> config;
 
 	@Override
 	public void onInitialize() {
-		config = AutoConfig.register(FabricNMPRConfig.class, JanksonConfigSerializer::new);
-		config.registerLoadListener((holder, config) -> {
-			CommonClass.refreshCache(config.general.cancelable);
-			return InteractionResult.PASS;
-		});
-		config.registerSaveListener((holder, config) -> {
-			CommonClass.refreshCache(config.general.cancelable);
-			return InteractionResult.PASS;
-		});
+		ConfigRegistry.INSTANCE.register(Constants.MOD_ID, ModConfig.Type.COMMON, NMPRConfig.commonSpec);
 
-		ServerLifecycleEvents.SERVER_STARTING.register((server) -> {
-			CommonClass.refreshCache(config.get().general.cancelable);
+		ModConfigEvents.loading(Constants.MOD_ID).register((config) -> {
+			CommonClass.refreshCache(NMPRConfig.COMMON.cancelable.get());
+		});
+		ModConfigEvents.reloading(Constants.MOD_ID).register((config) -> {
+			CommonClass.refreshCache(NMPRConfig.COMMON.cancelable.get());
 		});
 	}
 }

@@ -1,5 +1,6 @@
 package com.nopoisonregen;
 
+import com.nopoisonregen.config.NMPRConfig;
 import net.minecraft.world.entity.LivingEntity;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -16,8 +17,8 @@ import net.neoforged.neoforge.event.tick.EntityTickEvent;
 public class NMPRNeoForge {
 
 	public NMPRNeoForge(IEventBus eventBus, Dist dist, ModContainer container) {
-		container.registerConfig(ModConfig.Type.COMMON, NeoForgeNMPRConfig.commonSpec);
-		eventBus.register(NeoForgeNMPRConfig.class);
+		container.registerConfig(ModConfig.Type.COMMON, NMPRConfig.commonSpec);
+		eventBus.register(ConfigHandler.class);
 
 		NeoForge.EVENT_BUS.addListener(this::isEffectApplicable);
 		NeoForge.EVENT_BUS.addListener(this::onLivingTick);
