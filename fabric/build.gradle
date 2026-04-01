@@ -2,7 +2,7 @@ plugins {
     id 'java'
     id 'idea'
     id 'maven-publish'
-    id 'fabric-loom' version '1.11-SNAPSHOT'
+    id 'fabric-loom' version '1.15-SNAPSHOT'
     id 'net.darkhax.curseforgegradle'
     id 'com.modrinth.minotaur'
 }
@@ -21,6 +21,7 @@ repositories {
             includeGroup "com.terraformersmc"
         }
     }
+    mavenLocal()
 }
 
 dependencies {
@@ -40,6 +41,7 @@ loom {
     if (project(":common").file("src/main/resources/${mod_id}.accesswidener").exists()) {
         accessWidenerPath.set(project(":common").file("src/main/resources/${mod_id}.accesswidener"))
     }
+
     mixin {
         defaultRefmapName.set("${mod_id}.refmap.json")
     }
@@ -73,15 +75,39 @@ processResources {
     from project(":common").sourceSets.main.resources
 }
 
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId project.group
+            artifactId base.archivesName.get()
+            version project.version
+            from components.java
+        }
+    }
+
+    repositories {
+        if (System.getenv().SAP_SECRET) {
+            maven {
+                url "https://maven.saps.dev/releases"
+                credentials {
+                    username = "mrbysco"
+                    password = "${System.getenv().SAP_SECRET}"
+                }
+            }
+        }
+    }
+}
+
 if (System.getenv().CURSEFORGE_KEY) {
     task curseforge(type: net.darkhax.curseforgegradle.TaskPublishCurseForge) {
         apiToken = System.getenv().CURSEFORGE_KEY
 
         def mainFile = upload(project.curseforge_id, remapJar)
         mainFile.releaseType = 'beta'
-        mainFile.addGameVersion "Fabric"
+        mainFile.addModLoader "Fabric"
         mainFile.addGameVersion "${minecraft_version}"
-        mainFile.addGameVersion "Java 21"
+        mainFile.addJavaVersion "Java 21"
+        mainFile.addEnvironment('Client', 'Server')
 
         mainFile.changelog = file("$project.rootDir/changelog.md")
         mainFile.changelogType = 'markdown'
@@ -89,6 +115,7 @@ if (System.getenv().CURSEFORGE_KEY) {
         mainFile.addRequirement("fabric-api", "cloth-config")
     }
 }
+
 
 if (System.getenv().MODRINTH_KEY) {
     String fileContents = file("$project.rootDir/changelog.md").text

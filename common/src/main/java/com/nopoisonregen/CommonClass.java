@@ -2,7 +2,7 @@ package com.nopoisonregen;
 
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
@@ -30,9 +30,9 @@ public class CommonClass {
 			String[] values = configValue.split(",");
 			if (values.length == 2) {
 				String value1 = values[0];
-				ResourceLocation location1 = ResourceLocation.tryParse(value1);
+				Identifier location1 = Identifier.tryParse(value1);
 				String value2 = values[1];
-				ResourceLocation location2 = ResourceLocation.tryParse(value2);
+				Identifier location2 = Identifier.tryParse(value2);
 				if (location1 != null && location2 != null) {
 					Holder<MobEffect> effect1 = BuiltInRegistries.MOB_EFFECT.get(location1).orElse(null);
 					Holder<MobEffect> effect2 = BuiltInRegistries.MOB_EFFECT.get(location2).orElse(null);
